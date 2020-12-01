@@ -17,7 +17,7 @@ public class Controller : MonoBehaviour
     private float   inputMoveHorz      = 0.0f;
     private float   inputMoveVert      = 0.0f;
     private bool    inputJump       = false;
-    private bool    vertKeyDown     = false;
+    public bool    vertKeyDown     = false;
 
 
     // Store Internal Objects
