@@ -14,8 +14,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 112
+  m_CollisionDetection: 1
 --- !u!65 &-1834730670429982432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29,6 +29,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1345902526528568403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2192394190103886885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641d24afa52f1f647875fc8a44eafa68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 50
+  maxVelocity: 10
+  jumpForce: 300
+  vertKeyDown: 0
 --- !u!1001 &1345902526473994612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94,7 +110,12 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1a770210a0f3591468993c8777d4fc11,
         type: 3}
       propertyPath: m_Name
-      value: Farmer Variant
+      value: Farmer
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a770210a0f3591468993c8777d4fc11,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a770210a0f3591468993c8777d4fc11, type: 3}
