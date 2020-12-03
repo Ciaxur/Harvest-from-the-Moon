@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Controller : MonoBehaviour
-{
+public class Controller : MonoBehaviour {
     // Settings
     public float movementSpeed = 4.0f;
     public float maxVelocity = 10.0f;
@@ -12,17 +11,24 @@ public class Controller : MonoBehaviour
 
     // Internal References
     Rigidbody rbody;
+    Shooter shooter;
 
     // Internal Key Presses
-    private float   inputMoveHorz      = 0.0f;
-    private float   inputMoveVert      = 0.0f;
-    private bool    inputJump       = false;
-    public bool    vertKeyDown     = false;
+    float   inputMoveHorz   = 0.0f;
+    float   inputMoveVert   = 0.0f;
+    bool    inputJump       = false;
+    bool    vertKeyDown     = false;
+    bool    shootBullet     = false;
+
+
+    // Internal Data
+    float rotationAngle = 0.0f;
 
 
     // Store Internal Objects
     void Start() {
         rbody = GetComponent<Rigidbody>();
+        shooter = GetComponent<Shooter>();
     }
     
     // Physics Update
@@ -46,6 +52,16 @@ public class Controller : MonoBehaviour
         pVel.x = Mathf.Clamp(pVel.x, -maxVelocity, maxVelocity);
         pVel.z = Mathf.Clamp(pVel.z, -maxVelocity, maxVelocity);
         rbody.velocity = pVel;
+
+
+        // Update Rotation Angle with Offset
+        transform.rotation =  Quaternion.AngleAxis(rotationAngle - 90.0f, Vector3.down);
+
+        // Shoot Bullet!
+        if ( shootBullet ) {
+            shooter.Shoot();
+            shootBullet = false;
+        }
     }
     
     void OnCollisionEnter(Collision collision) {
@@ -65,5 +81,13 @@ public class Controller : MonoBehaviour
             inputJump = true;
             vertKeyDown = true;
         }
+
+        // Fire Input
+        if (!shootBullet && Input.GetButton("Fire1")) {
+            shootBullet = true;
+        }
+
+        Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+        rotationAngle = Mathf.Atan2( dir.y, dir.x ) * Mathf.Rad2Deg;
     }
 }
