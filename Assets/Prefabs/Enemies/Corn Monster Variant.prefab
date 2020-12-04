@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!54 &7532605204698611207
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756722585558392358}
+  serializedVersion: 2
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!65 &-3811348080407861606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13,6 +29,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.9999998, z: 1.9999998}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2863520238304530073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756722585558392358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5376b0554dd84b4cbc45e60802b8bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 25
 --- !u!114 &-664653922879100961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26,7 +55,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  velocity: 5
+  force: 100
 --- !u!1001 &1486267263950529399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93,6 +122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Corn Monster Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6cb2c21639090ff46a9b78afed22ff85,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cb2c21639090ff46a9b78afed22ff85, type: 3}

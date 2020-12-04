@@ -71,7 +71,7 @@ public class Controller : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    void LateUpdate() {
         // Update Movement
         inputMoveHorz = Input.GetAxisRaw("Horizontal") * movementSpeed;
         inputMoveVert = Input.GetAxisRaw("Vertical") * movementSpeed;
