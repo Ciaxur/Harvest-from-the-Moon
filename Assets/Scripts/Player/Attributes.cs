@@ -5,6 +5,7 @@ using UnityEngine;
 public class Attributes : MonoBehaviour {
     // External Settings
     public int health = 25;
+    public bool isPlayer = false;           // If Main Player
     
 
     /**
@@ -32,6 +33,15 @@ public class Attributes : MonoBehaviour {
 
     // Kills GameObject ;(
     public void die() {
-        Destroy(gameObject);
+        if (isPlayer) {
+            World world = FindObjectOfType<World>();    // Should only be One
+            world.GameOver();
+        }
+        else {
+            // Indicate to world your death :(
+            World world = FindObjectOfType<World>();
+            world.totalEnemies--;
+            Destroy(gameObject);
+        }
     }
 }
