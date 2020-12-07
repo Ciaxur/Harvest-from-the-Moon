@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6115928982357532666}
   - component: {fileID: 8930935003398368074}
   - component: {fileID: -4793586898173715903}
+  - component: {fileID: -8661976906548035631}
   m_Layer: 0
   m_Name: Hogweed Puddle
   m_TagString: Untagged
@@ -108,3 +109,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsTillDeath: 15
+--- !u!114 &-8661976906548035631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8479642994494390841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea30b3a05ce10e44eb65d13d11fd574a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  impulseAmount: 40
