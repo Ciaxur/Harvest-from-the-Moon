@@ -284,3 +284,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToLive: 3
+  seedType: 0
+  hogweedEffect: {fileID: 8479642994494390841, guid: b6921eaec5c4e584fb9ead2e126edcc9,
+    type: 3}
+  cherryEffect: {fileID: 0}
+  potatoEffect: {fileID: 0}

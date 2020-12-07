@@ -5,6 +5,10 @@ using UnityEngine;
 public class SeedGrowth : MonoBehaviour
 {
     public float timeToLive;
+    public seedTypes seedType;
+    public GameObject hogweedEffect;
+    public GameObject cherryEffect;
+    public GameObject potatoEffect;
 
     private float currentTime;
     private Vector3 currPos;
@@ -23,8 +27,19 @@ public class SeedGrowth : MonoBehaviour
         currentTime += Time.deltaTime;
         if (currentTime >= timeToLive)
         {
-//            Instantiate("hogweed");
-	    print("growth done");
+            Vector3 newPosition = transform.position + new Vector3(0, -.8f, 0);
+            switch (seedType)
+            {
+            case seedTypes.hogweed:
+                Instantiate(hogweedEffect, newPosition, Quaternion.identity);
+                break;
+            case seedTypes.potato:
+                Instantiate(potatoEffect, newPosition, Quaternion.identity);
+                break;
+            case seedTypes.cherry:
+                Instantiate(cherryEffect, newPosition, Quaternion.identity);
+                break;
+            }
             Destroy(this.gameObject);
         }
     }

@@ -12,6 +12,7 @@ public class Controller : MonoBehaviour {
     // Internal References
     Rigidbody rbody;
     Shooter shooter;
+    Inventory inventory;
 
     // Internal Key Presses
     float   inputMoveHorz   = 0.0f;
@@ -19,7 +20,7 @@ public class Controller : MonoBehaviour {
     bool    inputJump       = false;
     bool    vertKeyDown     = false;
     bool    shootBullet     = false;
-
+    bool    plantSeed       = false;
 
     // Internal Data
     float rotationAngle = 0.0f;
@@ -29,6 +30,7 @@ public class Controller : MonoBehaviour {
     void Start() {
         rbody = GetComponent<Rigidbody>();
         shooter = GetComponent<Shooter>();
+        inventory = GetComponent<Inventory>();
     }
     
     // Physics Update
@@ -62,6 +64,13 @@ public class Controller : MonoBehaviour {
             shooter.Shoot();
             shootBullet = false;
         }
+
+        if ( plantSeed ) {
+            plantSeed = false;
+            if (!vertKeyDown) {
+                inventory.plantSeed(inventory.currentSeed);
+            }
+        }
     }
     
     void OnCollisionEnter(Collision collision) {
@@ -85,6 +94,10 @@ public class Controller : MonoBehaviour {
         // Fire Input
         if (!shootBullet && Input.GetButton("Fire1")) {
             shootBullet = true;
+        }
+
+        if (!plantSeed && Input.GetButtonDown("Fire3")) {
+            plantSeed = true;
         }
 
         Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);

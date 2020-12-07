@@ -29,6 +29,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &370398341589051606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2192394190103886885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5376b0554dd84b4cbc45e60802b8bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 25
+  isPlayer: 0
 --- !u!114 &1345902526528568403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,6 +58,24 @@ MonoBehaviour:
   movementSpeed: 50
   maxVelocity: 10
   jumpForce: 300
+--- !u!114 &1567227797819873975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2192394190103886885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ae0913084089f44bb453a55276f6f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hogweedSeeds: 0
+  cherrySeeds: 0
+  potatoSeeds: 0
+  currentSeed: 0
+  growthPrefab: {fileID: 7437580963072460478, guid: cdcfbb64ad5fb72448932db6e3c5bbbf,
+    type: 3}
 --- !u!114 &4037740232594192734
 MonoBehaviour:
   m_ObjectHideFlags: 0

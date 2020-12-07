@@ -5,7 +5,6 @@ using UnityEngine;
 public class SeedDrop : MonoBehaviour
 {
     public float rotationSpeed = .5f;
-    public GameObject growthPrefab;
 
     private Vector3 currentEulerRot;
 
@@ -26,9 +25,7 @@ public class SeedDrop : MonoBehaviour
         GameObject other = coll.gameObject;
         if (other.tag == "Player")
         {
-            other.SendMessage("gainSeeds", "hogweed");
-	    Vector3 newLocation = transform.position + new Vector3(0, -1.9f, 0);
-            Instantiate(growthPrefab, newLocation, Quaternion.identity);
+            other.SendMessage("gainSeeds", seedTypes.hogweed);
             Destroy(this.gameObject);
         }
     }
