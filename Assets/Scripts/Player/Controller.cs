@@ -7,7 +7,9 @@ public class Controller : MonoBehaviour {
     public float movementSpeed = 4.0f;
     public float maxVelocity = 10.0f;
     public float jumpForce = 5.0f;
-
+    public GameObject gunDisplay;
+    public GameObject pitchforkDisplay;
+    public GameObject settingsMenu;
 
     // Internal References
     Rigidbody rbody;
@@ -22,6 +24,8 @@ public class Controller : MonoBehaviour {
     bool    shootBullet     = false;
     bool    cycleWeapons    = false;
     bool    plantSeed       = false;
+    bool    menuOpen        = false;
+    bool    isPitchfork     = false;
 
     // Internal Data
     float rotationAngle = 0.0f;
@@ -36,6 +40,12 @@ public class Controller : MonoBehaviour {
     
     // Physics Update
     void FixedUpdate() {
+        if (menuOpen && !settingsMenu.activeSelf){
+            settingsMenu.SetActive(true);
+        }
+        else if(!menuOpen && settingsMenu.activeSelf) {
+            settingsMenu.SetActive(false);
+        }
         // Update Player Movement
         Vector3 pVel = rbody.velocity;
         float jumpForce = 0.0f;
@@ -70,6 +80,16 @@ public class Controller : MonoBehaviour {
         if ( cycleWeapons ) {
             inventory.cycleWeapons();
             cycleWeapons = false;
+            if (isPitchfork){
+                isPitchfork = false;
+                gunDisplay.SetActive(true);
+                pitchforkDisplay.SetActive(false);
+            }
+            else {
+                isPitchfork = true;
+                gunDisplay.SetActive(false);
+                pitchforkDisplay.SetActive(true);
+            }
         }
 
         if ( plantSeed ) {
@@ -110,8 +130,18 @@ public class Controller : MonoBehaviour {
         if (!plantSeed && Input.GetButtonDown("Fire3")) {
             plantSeed = true;
         }
+        if(!menuOpen && Input.GetButtonDown("Cancel")){
+            menuOpen = true;
+        }
+        else if (menuOpen && Input.GetButtonDown("Cancel"))
+        {
+            menuOpen = false;
+        }
 
         Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
         rotationAngle = Mathf.Atan2( dir.y, dir.x ) * Mathf.Rad2Deg;
+    }
+    public void CloseMenu(){
+        menuOpen = false;
     }
 }
