@@ -20,6 +20,7 @@ public class Controller : MonoBehaviour {
     bool    inputJump       = false;
     bool    vertKeyDown     = false;
     bool    shootBullet     = false;
+    bool    cycleWeapons    = false;
     bool    plantSeed       = false;
 
     // Internal Data
@@ -29,7 +30,7 @@ public class Controller : MonoBehaviour {
     // Store Internal Objects
     void Start() {
         rbody = GetComponent<Rigidbody>();
-        shooter = GetComponent<Shooter>();
+//        shooter = GetComponent<Shooter>();
         inventory = GetComponent<Inventory>();
     }
     
@@ -61,8 +62,14 @@ public class Controller : MonoBehaviour {
 
         // Shoot Bullet!
         if ( shootBullet ) {
-            shooter.Shoot();
+//            shooter.Shoot();
+            inventory.Shoot();
             shootBullet = false;
+        }
+
+        if ( cycleWeapons ) {
+            inventory.cycleWeapons();
+            cycleWeapons = false;
         }
 
         if ( plantSeed ) {
@@ -94,6 +101,10 @@ public class Controller : MonoBehaviour {
         // Fire Input
         if (!shootBullet && Input.GetButton("Fire1")) {
             shootBullet = true;
+        }
+
+        if (!cycleWeapons && Input.GetButtonDown("Fire2")) {
+            cycleWeapons = true;
         }
 
         if (!plantSeed && Input.GetButtonDown("Fire3")) {

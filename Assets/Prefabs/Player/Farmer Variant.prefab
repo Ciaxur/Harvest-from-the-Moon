@@ -43,6 +43,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 25
   isPlayer: 0
+--- !u!114 &938102464312628963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2192394190103886885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a503d673c457f5141911687baf61b6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPointer: {fileID: 2192394190103886885}
+  bullet: {fileID: 82910540884504722, guid: 0ce41f45a9e15874b954eb4b02b80956, type: 3}
+  bulletSpeed: 10
+  minCooldownTime: 0.5
+  cooldownIncrease: 0.5
+  currentCooldownDecrease: 0.1
+  stashedCooldownDecrease: 1
+  isCurrentWeapon: 0
 --- !u!114 &1345902526528568403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +96,10 @@ MonoBehaviour:
   currentSeed: 0
   growthPrefab: {fileID: 7437580963072460478, guid: cdcfbb64ad5fb72448932db6e3c5bbbf,
     type: 3}
+  weapons:
+  - {fileID: 4037740232594192734}
+  - {fileID: 938102464312628963}
+  currentWeapon: {fileID: 4037740232594192734}
 --- !u!114 &4037740232594192734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +115,11 @@ MonoBehaviour:
   shotPointer: {fileID: 9116648919743736300}
   bullet: {fileID: 1432415656905936944, guid: f5613cf3d0e11b34aae8c19bab67c553, type: 3}
   bulletSpeed: 20
+  minCooldownTime: 0
+  cooldownIncrease: 0.2
+  currentCooldownDecrease: 0.01
+  stashedCooldownDecrease: 0.1
+  isCurrentWeapon: 1
 --- !u!1 &9116648919743736300
 GameObject:
   m_ObjectHideFlags: 0

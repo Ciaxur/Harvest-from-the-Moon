@@ -10,10 +10,18 @@ public class Inventory : MonoBehaviour
     public seedTypes currentSeed;
     public GameObject growthPrefab;
 
+    public List<Shooter> weapons;
+    public Shooter currentWeapon;
+
     // Start is called before the first frame update
     void Start()
     {
         currentSeed = seedTypes.hogweed;
+        foreach (Shooter w in weapons)
+        {
+            w.setCurrent(false);
+        }
+        currentWeapon.setCurrent(true);
     }
 
     // Update is called once per frame
@@ -22,7 +30,21 @@ public class Inventory : MonoBehaviour
         
     }
 
-    private void gainSeeds(seedTypes type)
+    public void cycleWeapons()
+    {
+        currentWeapon.setCurrent(false);
+        int curIndex = weapons.IndexOf(currentWeapon);
+        curIndex = (curIndex+1) % weapons.Count;
+        currentWeapon = weapons[curIndex];
+        currentWeapon.setCurrent(true);
+    }
+
+    public void Shoot()
+    {
+        currentWeapon.Shoot();
+    }
+
+    public void gainSeeds(seedTypes type)
     {
         switch (type)
         {

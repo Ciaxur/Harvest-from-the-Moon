@@ -643,30 +643,30 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 7370907769553784795}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2031269471 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4769028436121692744, guid: 5e9036b0d268b3749896640424e9642d,
+--- !u!114 &2031269473 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5856583623201079438, guid: 5e9036b0d268b3749896640424e9642d,
     type: 3}
   m_PrefabInstance: {fileID: 5687931746118117923}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2031269478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031269471}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae0913084089f44bb453a55276f6f3e, type: 3}
+  m_Script: {fileID: 11500000, guid: a503d673c457f5141911687baf61b6a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hogweedSeeds: 0
-  cherrySeeds: 0
-  potatoSeeds: 0
-  currentSeed: 0
-  growthPrefab: {fileID: 7437580963072460478, guid: cdcfbb64ad5fb72448932db6e3c5bbbf,
+--- !u!114 &2031269474 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7226838859761643315, guid: 5e9036b0d268b3749896640424e9642d,
     type: 3}
+  m_PrefabInstance: {fileID: 5687931746118117923}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a503d673c457f5141911687baf61b6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5687931746118117923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -694,6 +694,26 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5331670004488948954, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: weapons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331670004488948954, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: weapons.Array.data[0]
+      value: 
+      objectReference: {fileID: 2031269474}
+    - target: {fileID: 5331670004488948954, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: weapons.Array.data[1]
+      value: 
+      objectReference: {fileID: 2031269473}
+    - target: {fileID: 5331670004488948954, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: currentWeapon
+      value: 
+      objectReference: {fileID: 2031269474}
     - target: {fileID: 5687931746707925765, guid: 5e9036b0d268b3749896640424e9642d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -754,7 +774,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7226838859761643315, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: cooldownIncrease
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226838859761643315, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: currentCooldownDecrease
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226838859761643315, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: stashedCooldownDecrease
+      value: 0.01
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3227339870074905239, guid: 5e9036b0d268b3749896640424e9642d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5e9036b0d268b3749896640424e9642d, type: 3}
 --- !u!1001 &7370907769553784795
 PrefabInstance:

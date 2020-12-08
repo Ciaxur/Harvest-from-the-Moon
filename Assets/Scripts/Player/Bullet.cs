@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
     // External Settings
     public int damage = 1;
+    public bool persist = false;
 
     void OnTriggerEnter(Collider other) {
         // Collided with Enemy
@@ -14,7 +15,9 @@ public class Bullet : MonoBehaviour {
         }
 
         // DIE
-        Destroy(gameObject);
+        if (!persist) {
+            Destroy(gameObject);
+        }
     }
     
 }
