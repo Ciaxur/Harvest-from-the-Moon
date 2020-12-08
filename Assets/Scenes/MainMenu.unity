@@ -2021,7 +2021,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e799e7dd39cb0f3419839da541156d3e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e799e7dd39cb0f3419839da541156d3e,
         type: 3}
@@ -3327,7 +3327,7 @@ RectTransform:
   m_Children:
   - {fileID: 2137264979}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3696,53 +3696,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987908713}
   m_CullTransparentMesh: 0
---- !u!1 &1033365869
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1033365871}
-  - component: {fileID: 1033365870}
-  m_Layer: 0
-  m_Name: SettingsManager(Singleton)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1033365870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033365869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65eb7f96b546d6440b55fa5d99e83ba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicMuted: 0
-  musicVolume: 0.7
-  soundsMuted: 0
-  soundsVolume: 1
---- !u!4 &1033365871
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033365869}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 395.5, y: 222.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1051550947
 GameObject:
   m_ObjectHideFlags: 0
@@ -4126,7 +4079,7 @@ RectTransform:
   m_Children:
   - {fileID: 133793179}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4225,7 +4178,7 @@ RectTransform:
   m_Children:
   - {fileID: 1189886518}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4533,16 +4486,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0719570881552a244a8bef3a78f93ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleMusic: {fileID: 8300000, guid: 2c906dbc32c92584e83b2d1c762c6b93, type: 3}
-  victoryFanfare: {fileID: 8300000, guid: 2c906dbc32c92584e83b2d1c762c6b93, type: 3}
+  battleMusic: {fileID: 8300000, guid: 0457f1ebac33de344a4d620517e9d1f0, type: 3}
+  victoryFanfare: {fileID: 8300000, guid: 0457f1ebac33de344a4d620517e9d1f0, type: 3}
   isMuted: {fileID: 0}
   isPlaying: {fileID: 0}
   volumeSlider: {fileID: 0}
-  tutClosed: 0
-  battleMusicLoopPoint: 0
-  battleMusicLoopLength: 0
-  victoryLoopPoint: 0
-  victoryLoopLength: 0
+  tutClosed: 1
+  battleMusicLoopPoint: 12.5
+  battleMusicLoopLength: 19.2
+  victoryLoopPoint: 12.5
+  victoryLoopLength: 19.2
   soundIsMuted: {fileID: 0}
   soundVolumeSlider: {fileID: 0}
 --- !u!1 &1592773412

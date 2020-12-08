@@ -405,6 +405,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5687931747080111957, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: battleMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 69e0c0e28d791674a85e3dfc240d5155, type: 3}
+    - target: {fileID: 5687931747080111957, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: battleMusicLoopPoint
+      value: 9.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9036b0d268b3749896640424e9642d, type: 3}
 --- !u!1001 &1496706986
