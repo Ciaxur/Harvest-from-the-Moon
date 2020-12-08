@@ -116,9 +116,9 @@ MonoBehaviour:
   bullet: {fileID: 1432415656905936944, guid: f5613cf3d0e11b34aae8c19bab67c553, type: 3}
   bulletSpeed: 20
   minCooldownTime: 0
-  cooldownIncrease: 0.2
-  currentCooldownDecrease: 0.01
-  stashedCooldownDecrease: 0.1
+  cooldownIncrease: 0.02
+  currentCooldownDecrease: 0.001
+  stashedCooldownDecrease: 0.01
   isCurrentWeapon: 1
 --- !u!1 &9116648919743736300
 GameObject:
