@@ -3408,7 +3408,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1520858289}
-        m_MethodName: isSoundMuted
+        m_MethodName: isMusicMuted
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4451,8 +4451,10 @@ MonoBehaviour:
 
     Right Click to swich weapons
 
-    Space
-    to Jump
+    Middle
+    Click or Z to plant seeds
+
+    Space to Jump
 
     Esc to bring up menu'
 --- !u!222 &1178990420
@@ -5339,9 +5341,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleMusic: {fileID: 8300000, guid: 0457f1ebac33de344a4d620517e9d1f0, type: 3}
   victoryFanfare: {fileID: 8300000, guid: 0457f1ebac33de344a4d620517e9d1f0, type: 3}
-  isMuted: {fileID: 0}
+  isMuted: {fileID: 704412949}
   isPlaying: {fileID: 0}
-  volumeSlider: {fileID: 0}
+  volumeSlider: {fileID: 172915353}
   tutClosed: 1
   battleMusicLoopPoint: 12.5
   battleMusicLoopLength: 19.2
