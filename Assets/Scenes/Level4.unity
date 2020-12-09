@@ -297,6 +297,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9036b0d268b3749896640424e9642d, type: 3}
+--- !u!95 &867278954 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6715430602574820597, guid: 5e9036b0d268b3749896640424e9642d,
+    type: 3}
+  m_PrefabInstance: {fileID: 867278953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1496706986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -308,6 +314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Corn_Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956458902280214564, guid: 467573d6f0a518840b89e41b5b3c4c87,
+        type: 3}
+      propertyPath: total
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6008397066996451218, guid: 467573d6f0a518840b89e41b5b3c4c87,
         type: 3}
@@ -502,6 +513,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8450412884730935073, guid: e67c7dce0287d0e4db15658b2b0424b0,
+        type: 3}
+      propertyPath: total
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67c7dce0287d0e4db15658b2b0424b0, type: 3}
 --- !u!1001 &1883495975
@@ -571,6 +587,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6178562163100625027, guid: 49ee0a0652c866a4bbbc98006aaa2165,
+        type: 3}
+      propertyPath: total
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49ee0a0652c866a4bbbc98006aaa2165, type: 3}
 --- !u!1001 &1988016577
@@ -634,6 +655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226331674151396299, guid: c941bd583fe1e6a48bd9368524360d17,
+        type: 3}
+      propertyPath: total
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7617386215627830314, guid: c941bd583fe1e6a48bd9368524360d17,
         type: 3}
@@ -822,7 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f2940b125f1d448a393f7a71e7fdb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTransition: {fileID: 0}
+  fadeTransition: {fileID: 867278954}
 --- !u!114 &1353814683836711558
 MonoBehaviour:
   m_ObjectHideFlags: 0

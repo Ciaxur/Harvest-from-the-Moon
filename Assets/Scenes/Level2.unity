@@ -183,6 +183,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4226331674151396299, guid: c941bd583fe1e6a48bd9368524360d17,
+        type: 3}
+      propertyPath: total
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7617386215627830314, guid: c941bd583fe1e6a48bd9368524360d17,
         type: 3}
       propertyPath: m_Name
@@ -289,6 +294,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9036b0d268b3749896640424e9642d, type: 3}
+--- !u!95 &1179706647 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6715430602574820597, guid: 5e9036b0d268b3749896640424e9642d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1179706646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1296113073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -517,6 +528,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6178562163100625027, guid: 49ee0a0652c866a4bbbc98006aaa2165,
+        type: 3}
+      propertyPath: total
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49ee0a0652c866a4bbbc98006aaa2165, type: 3}
 --- !u!1001 &3391515825426023053
@@ -621,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f2940b125f1d448a393f7a71e7fdb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTransition: {fileID: 0}
+  fadeTransition: {fileID: 1179706647}
 --- !u!114 &3391515825426023056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,4 +680,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLastLevel: 0
-  totalEnemies: 20
+  totalEnemies: 10

@@ -373,6 +373,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4226331674151396299, guid: c941bd583fe1e6a48bd9368524360d17,
+        type: 3}
+      propertyPath: total
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7617386215627830314, guid: c941bd583fe1e6a48bd9368524360d17,
         type: 3}
       propertyPath: m_Name
@@ -523,6 +528,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8450412884730935073, guid: e67c7dce0287d0e4db15658b2b0424b0,
+        type: 3}
+      propertyPath: total
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67c7dce0287d0e4db15658b2b0424b0, type: 3}
 --- !u!1001 &601331088
@@ -614,6 +624,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9036b0d268b3749896640424e9642d, type: 3}
+--- !u!95 &601331089 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6715430602574820597, guid: 5e9036b0d268b3749896640424e9642d,
+    type: 3}
+  m_PrefabInstance: {fileID: 601331088}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &618752770 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2749821637615767720, guid: 5b093df167b7a1d4cacee8347159079d,
@@ -1025,6 +1041,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Corn_Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956458902280214564, guid: 467573d6f0a518840b89e41b5b3c4c87,
+        type: 3}
+      propertyPath: total
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6008397066996451218, guid: 467573d6f0a518840b89e41b5b3c4c87,
         type: 3}
@@ -2186,7 +2207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLastLevel: 0
-  totalEnemies: 30
+  totalEnemies: 12
 --- !u!114 &1959346647997033168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2199,7 +2220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f2940b125f1d448a393f7a71e7fdb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTransition: {fileID: 0}
+  fadeTransition: {fileID: 601331089}
 --- !u!114 &1959346647997033169
 MonoBehaviour:
   m_ObjectHideFlags: 0
