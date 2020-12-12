@@ -1207,7 +1207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLastLevel: 1
-  totalEnemies: 40
+  totalEnemies: 14
 --- !u!114 &1353814683836711557
 MonoBehaviour:
   m_ObjectHideFlags: 0
