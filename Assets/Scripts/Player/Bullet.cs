@@ -7,6 +7,16 @@ public class Bullet : MonoBehaviour {
     public int damage = 1;
     public bool persist = false;
 
+    void Start() {
+        AudioSource source = gameObject.GetComponent<AudioSource>();
+        if (source != null) {
+          source.volume = SettingsManager.Instance.soundsVolume;
+          source.mute = SettingsManager.Instance.soundsMuted;
+          source.Play();
+          print("AudioSource Found");
+        }
+    }
+
     void OnTriggerEnter(Collider other) {
         // Collided with Enemy
         if (other.tag == "Enemy") {
