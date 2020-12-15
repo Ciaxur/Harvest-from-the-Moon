@@ -797,6 +797,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67c7dce0287d0e4db15658b2b0424b0, type: 3}
+--- !u!114 &1271819668 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6440683660685328059, guid: 5e9036b0d268b3749896640424e9642d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5687931746118117923}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5376b0554dd84b4cbc45e60802b8bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1330215819
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,6 +1003,46 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2179161347591712926, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956522119044064277, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1271819668}
+    - target: {fileID: 3956522119044064277, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: inflictDamage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956522119044064277, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299995251638065142, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299995251841627346, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299995252045904052, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299995252290103457, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299995252484415707, guid: 5e9036b0d268b3749896640424e9642d,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
