@@ -411,6 +411,46 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4299995251175091771, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 867278955}
+    - target: {fileID: 4299995251175091771, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setSoundsVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299995251511510767, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 867278955}
+    - target: {fileID: 4299995251511510767, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299995251624408770, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 867278955}
+    - target: {fileID: 4299995251624408770, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: isSoundMuted
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299995252036976995, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 867278955}
+    - target: {fileID: 4299995252036976995, guid: 5e9036b0d268b3749896640424e9642d,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: isMusicMuted
+      objectReference: {fileID: 0}
     - target: {fileID: 5687931746707925765, guid: 5e9036b0d268b3749896640424e9642d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -489,6 +529,18 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 867278953}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &867278955 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5687931747080111957, guid: 5e9036b0d268b3749896640424e9642d,
+    type: 3}
+  m_PrefabInstance: {fileID: 867278953}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0719570881552a244a8bef3a78f93ba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1496706986
 PrefabInstance:
   m_ObjectHideFlags: 0

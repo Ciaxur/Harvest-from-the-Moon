@@ -25,7 +25,7 @@ public class HogweedPond : MonoBehaviour {
             float newValue = enemies[other.gameObject] + Time.deltaTime;
             if (newValue > .2f && newValue * damage >= 1.0f)
             {
-                other.GetComponent<Attributes>().inflictDamage((int) newValue);
+                other.GetComponent<Attributes>().inflictDamage((int) (newValue * damage));
                 newValue -= (int) newValue;
                 other.GetComponent<Rigidbody>().AddForce(new Vector3(0, impulseAmount, 0), ForceMode.Impulse);
             }
