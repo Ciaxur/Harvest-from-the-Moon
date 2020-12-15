@@ -10,6 +10,12 @@ public class Attributes : MonoBehaviour {
     public bool isPlayer = false;           // If Main Player
     public Image healthBar;                 // Modify fill to set bar
    
+    private AudioSource damageSound;
+
+    void Start()
+    {
+        damageSound = GetComponent<AudioSource>();
+    }
 
     /**
      * Increases health by given increment
@@ -27,7 +33,10 @@ public class Attributes : MonoBehaviour {
      */
     public void inflictDamage(int damageValue) {
         this.health -= damageValue;
-
+        if (!SettingsManager.Instance.soundsMuted && damageSound != null) {
+            damageSound.volume = SettingsManager.Instance.soundsVolume;
+            damageSound.Play();
+        }
         if (healthBar) {
             healthBar.fillAmount = (float)health / maxHealth;
         }
