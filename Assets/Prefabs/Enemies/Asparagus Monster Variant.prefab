@@ -77,6 +77,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 25
+  maxHealth: 25
+  isPlayer: 0
+  healthBar: {fileID: 0}
+--- !u!114 &-3810316866477847812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2643687363670404149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdf8d24a1551b86418ea144c0abe679d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  hitRate: 1
 --- !u!1001 &2914157126166139236
 PrefabInstance:
   m_ObjectHideFlags: 0

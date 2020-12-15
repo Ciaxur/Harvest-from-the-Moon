@@ -27,7 +27,11 @@ public class Attributes : MonoBehaviour {
      */
     public void inflictDamage(int damageValue) {
         this.health -= damageValue;
-        healthBar.fillAmount = (float)health / maxHealth;
+
+        if (healthBar) {
+            healthBar.fillAmount = (float)health / maxHealth;
+        }
+        
         if (this.health <= 0) {
             this.die();
         } 

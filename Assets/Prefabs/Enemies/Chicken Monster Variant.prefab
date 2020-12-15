@@ -42,6 +42,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 25
+  maxHealth: 25
+  isPlayer: 0
+  healthBar: {fileID: 0}
 --- !u!195 &-2883703949521916697
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -77,6 +80,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+--- !u!114 &1096994800401835708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869963798562018677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdf8d24a1551b86418ea144c0abe679d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  hitRate: 1
 --- !u!1001 &4140415834652944420
 PrefabInstance:
   m_ObjectHideFlags: 0

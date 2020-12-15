@@ -13,7 +13,6 @@ public class Bullet : MonoBehaviour {
           source.volume = SettingsManager.Instance.soundsVolume;
           source.mute = SettingsManager.Instance.soundsMuted;
           source.Play();
-          print("AudioSource Found");
         }
     }
 
