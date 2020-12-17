@@ -41,6 +41,7 @@ public class Controller : MonoBehaviour {
     // Physics Update
     void FixedUpdate() {
         if (menuOpen && !settingsMenu.activeSelf){
+            Time.timeScale = 0f;
             settingsMenu.SetActive(true);
         }
         else if(!menuOpen && settingsMenu.activeSelf) {
@@ -135,6 +136,7 @@ public class Controller : MonoBehaviour {
         }
         else if (menuOpen && Input.GetButtonDown("Cancel"))
         {
+            Time.timeScale = 1f;
             menuOpen = false;
         }
 
@@ -142,6 +144,7 @@ public class Controller : MonoBehaviour {
         rotationAngle = Mathf.Atan2( dir.y, dir.x ) * Mathf.Rad2Deg;
     }
     public void CloseMenu(){
+        Time.timeScale = 1f;
         menuOpen = false;
     }
 }
